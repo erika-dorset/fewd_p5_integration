@@ -47,7 +47,7 @@ class Particles extends React.Component {
 
                                 // this function creates the connections(lines)
                                 // between particles which are less than a certain distance apart
-                                joinParticles(paraticles) {
+                                joinParticles(particles) {
                                     particles.forEach(element => {
                                         let dis = p5.dist(this.x, this.y, element.x, element.y);
                                         if (dis < 85) {
